@@ -1,0 +1,5 @@
+a = input ('请输入第一个数字：')
+c = input ('请输入第二个数字：')
+print(type(a))
+print(type(c))
+print(a, "*", c, " =" , int(a)*int(c))
