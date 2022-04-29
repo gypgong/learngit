@@ -225,3 +225,83 @@ def person(name, age, *, city = 'shenzhen', job):
 
 # 由于命名关键字参数city 具有默认值，调用时，可不传入city 参数
 person('Jack', 26, job='Engineer')
+
+
+# 使用命名关键字参数时，要特别注意，如果没有可变参数，就必须加一个*作为分隔符。如果缺少 * ，Python解释器将无法识别位置参数和命名关键字参数：
+def person(name, age, city, job):
+    # 缺少 * ，city 和job 被视为位置参数
+    pass
+
+
+# **参数组合
+
+''' 
+在Python中定义函数，可以用必选参数、默认参数、可变参数、关键字参数和命名关键字参数，这5种参数都可以组合使用，但是请注意，参数定义的顺序必须是：
+必选参数、默认参数、可变参数、命名关键字参数和关键字参数
+'''
+# 比如定义一个函数，包含上述若干种参数：
+def f1(a, b, c=0, *args, **kw):
+    print('a=', a, 'b=', b, 'c=', c, 'args=', args, 'kw=', kw)
+    pass
+
+def f2(a, b, c=0, *, d, **kw):
+    print('a=', a, 'b=', b, 'c=', c, 'd=', d, 'kw=', kw)
+    pass
+
+# 在调用的时候，Python解释器自动按照参数位置和参数名把对应的参数传进去。
+f1(1, 2)
+
+f1(1, 2, c=5)
+
+f1(1, 2, 3,'a', 'b')
+
+f1(1, 2, 3,'a', 'b', x=99)
+
+
+f2(1, 2, d=99, ext=None)
+
+
+# 最神奇的是通过一个tuple 和dict， 你也可以调用上述函数
+args = (1, 2, 3, 4)
+
+kw = {'d': 99, 'x': '#'}
+
+f1(*args, **kw)
+
+
+args = (1, 2, 3)
+
+kw = {'d': 88, 'x': '#', 'f': 66}
+
+f2(*args, **kw)
+
+# 所以，对于任意函数，都可以通过类似func(*args, **kw)的形式调用它，无论它的参数是如何定义的
+''' 
+虽然可以组合多大5种参数，但不要同时使用太多的组合，否则函数的接口可理解性很差
+'''
+
+# 练习
+# 以下函数允许计算两个数的乘机，请稍加改造，变成可接收一个或多个数并计算乘积
+
+# def mul(x, y):
+#     return x * y
+
+def mul(x, y=0, *args):
+    if not (isinstance(x, (int, float)) and isinstance(y, (int, float))):
+        raise TypeError('bad operand type x or y TypeError')
+    if args != None:
+        for Value in args:
+            if not (isinstance(Value, (int, float))):
+                raise TypeError('bad operand type args\'s TypeError')
+    if y==0 and nubers==None:
+        amass = x
+        return amass    
+    if x==0 or y==0 or nubers==None:
+        amass = x
+    return amass 
+
+    if
+    
+    pass
+
+
