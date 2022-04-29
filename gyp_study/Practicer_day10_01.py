@@ -1,8 +1,27 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# **位置参数
+# 计算x二次方的函数
+def power(x):
+    return x * x
+print(power(5))
 
-# 增加默认参数
+
+# 计算任意n次方：
+def power(x, n):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+
+print(power(5))
+print(power(5, 5))
+
+
+
+# **增加默认参数
 def power(x, n=2):
     s = 1
     while n > 0:
@@ -82,7 +101,7 @@ print(add_end())
 
 
 
-# 可变参数
+# **可变参数
 ''' 
 以数学题为例，给定一组数字a, b, c ......,请计算所有数字的平方之和
 要定义出这个函数，我们必选确定输入的参数。由于参数个数不确定，我们首先想到可以把a, b, c ......作为一个list或tuple传进来，这样函数可以定义如下：
@@ -138,7 +157,7 @@ calc(*nums)
 
 
 
-# 关键字参数
+# **关键字参数
 
 ''' 
 可变参数允许你传入0个 或任意个参数，这些可变参数在函数调用时自动组装为一个tuple。而关键字参数允许你传入0个或任意个含参数名的参数，
@@ -162,7 +181,7 @@ person('Jack', 26, **extra)
 
 
 
-#  命名关键字参数
+#  **命名关键字参数
 
 ''' 
 对应关键字参数，函数的调用者可以传入任意不受限制的关键字参数。至于到底传入了那些，就需要在函数内部通过 kw检查
@@ -188,3 +207,21 @@ def person(name, age, *, city, job):
 # 调用方式如下：
 person('Jack', 26, city='shenzhen', job='Engineer')
 
+# 如果函数定义中已经有了一个可变参数，后面跟着的命名关键字参数就不再需要一个特殊分隔符 * 了
+def person(name, age, *args, city, job):
+    print(name, age, args, city, job)
+
+
+# 命名关键字参数必需传入参数名，这和位置数不同，如果没有传入参数名，调用将会报错；
+person('Jack', 26, 'shenzhen','Engineer')
+# Traceback (most recent call last):
+#   File "<stdin>", line 1, in <module>
+# TypeError: person() missing 2 required keyword-only arguments: 'city' and 'job'
+
+# 由于调用时缺少参数名city 和job ,Python解释器把前两个参数视为位置参数，后两个参数传给 *args , 但缺少命名字参数导致报错
+# 命名关键字参数可以有缺省值（以为可以让某个参数带有默认值，每次传参时可省略），从而简化调用
+def person(name, age, *, city = 'shenzhen', job):
+    print(name, age, city, job)
+
+# 由于命名关键字参数city 具有默认值，调用时，可不传入city 参数
+person('Jack', 26, job='Engineer')

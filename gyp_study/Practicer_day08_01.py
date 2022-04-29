@@ -1,6 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# 位置参数
 # 计算x二次方的函数
 def power(x):
     return x * x
