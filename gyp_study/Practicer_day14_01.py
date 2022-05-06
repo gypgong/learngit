@@ -68,9 +68,14 @@ l[:] # 甚至什么都不写，只写[:]就可以原样复制一个list
 def trim(s):
     n = 0
     for i in s:
-        if i != 
-    pass
+        if i != ' ':
+            n = n + 1
+            break
+    s = s[n:(len[s]-1)]                   
     return  s
+
+
+trim('   aaa')
 
 
 # a = 'abc'
@@ -86,6 +91,10 @@ def trim(s):
 # print('d', len(d))
 
 
+
+trim('   aaaaa')
+a = ' '
+print(' '== a)
 # 测试:
 if trim('hello  ') != 'hello':
     print('测试失败!')
