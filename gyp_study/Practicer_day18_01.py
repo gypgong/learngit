@@ -133,15 +133,42 @@ next(odd())
 原因在于odd()会创建一个新的generator对象，上述代码实际上创建了3个完全独立的generator，对3个generator分别调用next()当然每个都会返回第一个值。
 正确的写法是创建一个generator对象，然后不断对这一个generator对象调用next()
 '''
- 
+g = odd()
+next(g)
+next(g)
+next(g)
+'''
+回到fib的例子，我们在循环的过程中不断调用yield，就会不断中断。当然要给循环设置一个条件来退出循环，不然就会产品一个无限数列出来。
+同样的，把函数改成generator函数后，我们基本上从来不会next()来获取下一个返回值，而是直接使用for循环来迭代：
+'''
+def fib(max):
+    a, b, n = 0, 1, 0
+    while n < max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
 
-
-def triangles():
-    L = [1]
-    while True:   
-        yield  L    
-        medium = [0] +L+ [0]    
-        L = [medium[i] + medium[i+1] for i in range(len(L)+1)]
+for n in fib(6):
+    print(n)
+''' 
+但是用for循环调用generator时，发现拿不到generator的return语句的返回值。如果想要拿到返回值，必须捕获StopIteration错误，返回值包含在StopIteration的value中：
+'''
+g = fib(6)
+while True:
+    try:
+        x = next(g)
+        print('g', x)
+    except StopIteration as e:
+        print('Generator return value', e.value)
+        break
+        
+# def triangles():
+#     L = [1]
+#     while True:   
+#         yield  L    
+#         medium = [0] +L+ [0]    
+#         L = [medium[i] + medium[i+1] for i in range(len(L)+1)]
 
 
 def triangles():
@@ -155,7 +182,8 @@ def triangles():
 L = [1, 2, 1]
 [L[n] + L[n + 1] for n in range(2)]
 
-
+medium = [0] +[1, 2, 1]+ [0]
+print(medium)
 
 list1 = list(range(0))
 list2 = list(range(1))
