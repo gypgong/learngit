@@ -13,6 +13,22 @@ iterable：可迭代对象，如列表、range 对象等。
 返回值r：返回一个
 '''
 
+# cese1
+def id_odd(n):
+    return n % 2 == 1
+
+L = range(100)
+print(list(filter(id_odd, L)))
+
+
+print()
+# case2
+def not_empty(s):
+    return s and s.strip()
+
+print(list(filter(not_empty, ['A', '', 'B', None, 'C', ' '])))
+
+
 # 练习
 # 回数是指从左向右读和从右从左读都是一样的数，隶属12321，909.请利用filter()筛选出回数。
 def is_palindrome(n):
