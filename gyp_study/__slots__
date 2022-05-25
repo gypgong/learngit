@@ -1,3 +1,28 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# 使用__slots__
+
+from curses import ACS_GEQUAL
+from imp import is_builtin
+from unicodedata import name
+
+
+class Stdudent(object):
+    __slots__ = ('name', 'age')
+
+
+s = Stdudent()
+s.name = 'Michael'
+s.age = 25
+s.score = 99 # 由于‘score’没有被放到__slots__中，所以不能绑定score属性，试图绑定score将得到AttributeError的错误
+# 使用__slots__要注意，__slots__定义的属性近对当前类实例起作用，对继承的子类是不起作用的
+
+class GraduateStudent(Stdudent):
+    pass
+
+g = GraduateStudent()
+g.score = 999
+
+# 除非在子类中也定义__slots__，这样，子类实例允许定义的属性就是自身的__slots__加上父类的__slots__。
+
