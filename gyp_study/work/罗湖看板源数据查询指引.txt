@@ -1,0 +1,225 @@
+PC罗湖 
+
+业务看板
+
+1、生产数据来源：http://138.0.0.163/  （东湖管理员 dhadmin    Dh@zf&sLP#e2   //大望制水站 huyh密码ABCabc123!@#） ///莲塘水厂 admin  @ABCabc123   192.168.225.170/pmislt
+
+2、管网数据来源（巡检、探漏）：http://10.200.6.55:8080/Account/Login（admin ABCabc123） 不区水厂  //其它在综调查询
+
+3、外业http://10.200.6.92:8062/#/wap/layout1/workSheetInstPlan  帐号：zongwenjuan 密码：Szwg@123
+
+
+
+
+
+http://10.200.6.147:8000/
+
+福田 lvlx  1qaz2wsx!
+罗湖  zongwenjuan  1qaz2wsx!
+南山 lill  1qaz2wsx!
+布沙  zengling  1qaz2wsx!
+
+
+应急相关
+应急上报，应急反馈，工单反馈，结束审核
+总裁  gonglimin
+副总裁  yaowy
+部长  zouqx
+总经理 guwei1688
+
+
+
+账号:ytadmin
+密码:  
+ijnokmpl,
+1qaz2wsx!
+
+爆管
+DN小于400
+方金山  fangjinshan
+   
+
+DN大于等于400
+zhangpenghm
+
+
+沙头角水务所：段清贤
+盐田水务所： 方金山、范超
+
+级 -结束-确认驳回
+
+级 -结束-结束确认
+
+级 -结束-结束确认
+-------------------------------------------------------
+罗湖
+
+东湖水厂
+总裁  gonglimin
+副总裁  yaowy
+部长  zouqx
+总经理 chenlixin
+厂长 suzh
+
+
+罗湖工单派发人员：
+533  李集  liji
+566  严勇  yanyong
+663  陈月茹  chenyueru
+
+
+笋岗水务运营所长：阮峰 ruanfeng
+黄贝水务运营所长：邓波 dengbo
+清河水务所所长：谢望荣 xiewr
+
+部长：李集  liji
+-----------------------------------------------------
+
+福田
+
+梅林水厂
+总裁  gonglimin
+副总裁  yaowy
+部长  zouqx
+总经理 zhangdh
+厂长  liling_mlp
+
+
+笔架山
+厂长  yewp
+
+福田部长：
+huangjian
+liuyanqing
+lichangfang
+
+
+
+福中水务所所长：廖焕鑫 liaohuanxin
+福东水务所所长：戴志忠 daizz
+香蜜水务所所长：薛志忠 xuezz
+梅林水务所所长：郑德平 zhaodp
+------------------------------------------------------
+
+南山
+
+大涌水厂
+总裁  gonglimin
+副总裁  yaowy
+部长  zouqx
+总经理 dengrz
+厂长  yangh
+
+
+南山水厂
+总裁  gonglimin
+副总裁  yaowy
+部长  zouqx
+总经理 dengrz
+厂长  tanxm
+
+南山：
+蛇口水务所所长：方毅
+粤海水务所所长：凌发建
+西丽水务所所长：梁文波
+南头水务所所长：吴福海
+前海水务所所长：周晓凤
+
+
+厂长
+西丽再生水厂 wenqh
+南山水质净化厂 lihuans
+蛇口水质净化厂 chenjinlian
+
+
+南山分公司官网部部长：ligang_kf
+南山部长：lill
+
+
+
+------------------------------------------------------
+布沙
+总裁  gonglimin
+副总裁  yaowy
+部长  zouqx
+总经理 zhuwf
+
+沙湾水务所 zhouli
+布吉水务所 caogm
+
+
+密码:
+ijnokmpl,
+1qaz2wsx!
+
+
+布沙部长：guyong
+
+
+笔架山管理员 bjsadmin    BjsH9yHtQ6#m
+盐田管理员 ytadmin    yTBkY2n&JM95
+梅林管理员 mladmin    ML9kPbDh#i#m
+罗芳管理员 lfadmin    LF!ZT%jmGcpX
+东湖管理员 dhadmin    Dh@zf&sLP#e2
+滨河管理员 bhadmin    bhRSR&ubP86h
+大涌管理员 dcadmin    Dc9LHM&Hyme%
+南山管理员 nsadmin    nSSv*C2q7DFG
+沙头角管理员 stjadmin    Stjs2w&igd#X
+盐田港管理员 ytgadmin    yTG2SVtTX9!u
+南山水厂管理员 nsscadmin   Nssc@P13th5g
+西丽管理员 xladmin    XLBXsZP%@nV2
+蛇口水质管理员 skadmin    skyb9m6hSp#D
+福田管理员 ftadmin    ftq*&aPS!m27
+
+
+
+
+
+
+其它4区配，pmis数据查询
+http://138.0.0.163/#
+
+大涌管理员 dcadmin    Dc9LHM&Hyme%
+南山管理员 nsadmin    nSSv*C2q7DFG
+笔架山管理员 bjsadmin    BjsH9yHtQ6#m
+盐田管理员 ytadmin    yTBkY2n&JM95
+梅林管理员 mladmin    ML9kPbDh#i#m
+罗芳管理员 lfadmin    LF!ZT%jmGcpX
+东湖管理员 dhadmin    Dh@zf&sLP#e2
+滨河管理员 bhadmin    bhRSR&ubP86h
+大涌管理员 dcadmin    Dc9LHM&Hyme%
+南山管理员 nsadmin    nSSv*C2q7DFG
+沙头角管理员 stjadmin    Stjs2w&igd#X
+盐田港管理员 ytgadmin    yTG2SVtTX9!u
+南山水厂管理员 nsscadmin   Nssc@P13th5g
+西丽管理员 xladmin    XLBXsZP%@nV2
+蛇口水质管理员 skadmin    skyb9m6hSp#D
+福田管理员 ftadmin    ftq*&aPS!m27
+ 大望制水站 huyh密码ABCabc123!@#
+ 
+ 
+ 
+ PMIS调度指令测试环境
+下发指令接口：http://138.0.8.163:7001/api/SchedulingInstruction/DispatchInstruction
+指令完成接口：http://138.0.8.163:7001/api/SchedulingInstruction/FinishInstruction
+
+
+
+
+
+问题：
+1、确认后大屏未提示（已处理）
+2、大屏右侧沟通消息未实时推送（已处理）
+3、工单派发list为空（已处理）
+4、app上报时，多请求了盐田接口（http://59.37.60.1:8005/kpi-bs/api/emeEvent/getLoacationAndGrade?parentId=97）
+5、大屏应急状态未接入ws推送，目前未前端定数请求方式
+6、大屏审核人信息、审核时间为空
+7、外层应急list切入到内层应急list时，未定位到对应选中的应急
+8、
+
+
+
+ws://10.200.6.147:8005/kpi-bs/websocket/emeEvent/notify/confirm/msg/713
+ws://10.200.6.147:8005/kpi-bs/websocket/emeEvent/notify/confirm/msg/713
+
+
