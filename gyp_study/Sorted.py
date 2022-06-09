@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 # **sorted()函数的基本语法格式如下
-r = sorted(iterable, key=None, reverse=False)
+from collections import Iterable, Iterator
+r = sorted(Iterable, key=None, reverse=False)
 ''' 
 iterable:表示知道的序列（可迭代对象）
 key参数可以自定义排序规则
