@@ -13,7 +13,7 @@ os.name # 操作系统类型（‘posix’说明是Linux、unix、Mac os x，如
 os.uname() # 获取详细的系统信息
 
 # 环境变量
-os.environ
+os.environ # 查看环境变量
 
 os.environ.get('PATH') # 获取path环境变量的值
 
