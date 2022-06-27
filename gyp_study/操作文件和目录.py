@@ -39,6 +39,7 @@ os.rmdir('/Users/gypgong/Documents/learngit/gyp_study/testdir')
 os.path.join('/Users/gypgong/Documents/learngit/gyp_study', 'testdir')
 
 # 同理，要拆分路径时，也不要直接去拆字符串，而是要通过os.path.split()函数，可以把一个路径拆分成为两部分，后一部分总是最后级别的目录或文件名：
+
 os.path.split('/Users/gypgong/Documents/learngit/gyp_study/testdir/file.txt')
 
 # 合并、拆分路径的函数并不要求目录和文件要真实存在，他们只对字符串进行操作
@@ -50,7 +51,16 @@ os.rename('test.txt', 'test') # 对文件重命名
 
 os.remove('test.py') # 删掉文件
 
+
+import os
+
 [x for x in os.listdir('.') if os.path.isdir(x)] # 列出当前目录下的所有目录
 
 [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1]=='.py'] # 列出所有.py文件
 
+
+
+# 练习
+
+# 1、利用os模块编写一个能实现 dir -l输出的程序
+# 2、编写一个程序，能在当前目录以及当前目录的所有子目录下查找文件名包含制定字符串的文件，并打印出相对路径
