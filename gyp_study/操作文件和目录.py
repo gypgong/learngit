@@ -95,9 +95,9 @@ outputDir('./.vscode', a, p)
 for n, x in enumerate(a):
     if x.find('main') != -1:
         print(p[n])
-=======
+
 # 练习
 
 # 1、利用os模块编写一个能实现 dir -l输出的程序
 # 2、编写一个程序，能在当前目录以及当前目录的所有子目录下查找文件名包含制定字符串的文件，并打印出相对路径
->>>>>>> cb294eeec0830c1027081df130a8e783661ebab3
+
