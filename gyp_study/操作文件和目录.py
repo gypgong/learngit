@@ -60,8 +60,6 @@ import os
 
 
 
-<<<<<<< HEAD
-
 
 import os
 def outputDir(dir, a):
