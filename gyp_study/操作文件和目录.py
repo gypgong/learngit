@@ -54,3 +54,39 @@ os.remove('test.py') # 删掉文件
 
 [x for x in os.listdir('.') if os.path.isfile(x) and os.path.splitext(x)[1]=='.py'] # 列出所有.py文件
 
+
+
+
+
+import os
+def outputDir(dir, a):
+    if os.path.isdir(dir):
+        d = os.listdir(dir)
+    for f in d:
+        a.append(f)
+        outputDir(os.path.join(dir, f), a)
+              
+
+a = []
+outputDir('.', a)
+print(a)
+
+
+print('================分割线===============')
+
+import os
+def outputDir(dir, a, p):
+    if os.path.isdir(dir):
+        d = os.listdir(dir)
+        for f in d:
+            path = os.path.join(dir, f)
+            a.append(f)
+            p.append(path)
+            outputDir(path, a, p)
+
+a = []
+p = []
+outputDir('./.vscode', a, p)
+for n, x in enumerate(a):
+    if x.find('main') != -1:
+        print(p[n])
