@@ -63,4 +63,16 @@ import os
 # 练习
 
 # 1、利用os模块编写一个能实现 dir -l输出的程序
+import os
+def outputDir(dir, a):
+    
+    if os.path.isdir(dir):
+        d = os.listdir('.')
+    for f in d:
+        a.append(f)
+        outputDir(os.path.jion((dir, f), a))
+a = []
+outputDir('.', a)   
+print(a)
+
 # 2、编写一个程序，能在当前目录以及当前目录的所有子目录下查找文件名包含制定字符串的文件，并打印出相对路径
