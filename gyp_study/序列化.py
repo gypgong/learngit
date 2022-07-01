@@ -1,8 +1,6 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-<<<<<<< HEAD
-
 import pickle
 
 d = dict(name='Bob', age=20, score=88)
