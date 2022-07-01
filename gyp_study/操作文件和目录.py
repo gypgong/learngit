@@ -60,9 +60,44 @@ import os
 
 
 
+
+import os
+def outputDir(dir, a):
+    if os.path.isdir(dir):
+        d = os.listdir(dir)
+    for f in d:
+        a.append(f)
+        outputDir(os.path.join(dir, f), a)
+              
+
+a = []
+outputDir('.', a)
+print(a)
+
+
+print('================分割线===============')
+
+import os
+def outputDir(dir, a, p):
+    if os.path.isdir(dir):
+        d = os.listdir(dir)
+        for f in d:
+            path = os.path.join(dir, f)
+            a.append(f)
+            p.append(path)
+            outputDir(path, a, p)
+
+a = []
+p = []
+outputDir('./.vscode', a, p)
+for n, x in enumerate(a):
+    if x.find('main') != -1:
+        print(p[n])
+
 # 练习
 
 # 1、利用os模块编写一个能实现 dir -l输出的程序
+<<<<<<< HEAD
 import os
 def outputDir(dir, a):
     
@@ -76,3 +111,7 @@ outputDir('.', a)
 print(a)
 
 # 2、编写一个程序，能在当前目录以及当前目录的所有子目录下查找文件名包含制定字符串的文件，并打印出相对路径
+=======
+# 2、编写一个程序，能在当前目录以及当前目录的所有子目录下查找文件名包含制定字符串的文件，并打印出相对路径
+
+>>>>>>> a8aec7941113cd03616d1de413aaccaec13875ec
