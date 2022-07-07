@@ -63,3 +63,7 @@ if __name__=='__main__':
     print('All subprocesses done.')
 
 
+
+
+for i in range(2):
+    print(i)
