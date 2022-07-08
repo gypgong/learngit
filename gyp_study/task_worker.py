@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
+from multiprocessing import Queue
 import time, sys, queue
 from multiprocessing.managers import BaseManager
 
