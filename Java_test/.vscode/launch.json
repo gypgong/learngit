@@ -1,0 +1,126 @@
+{
+    // 使用 IntelliSense 了解相关属性。 
+    // 悬停以查看现有属性的描述。
+    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Score",
+            "request": "launch",
+            "mainClass": "Score",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaskLoopTwo",
+            "request": "launch",
+            "mainClass": "TaskLoopTwo",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch LoopNestingOne",
+            "request": "launch",
+            "mainClass": "LoopNestingOne",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaskLoopOne",
+            "request": "launch",
+            "mainClass": "TaskLoopOne",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch TaskLoopThree",
+            "request": "launch",
+            "mainClass": "TaskLoopThree",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Test",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Master",
+            "request": "launch",
+            "mainClass": "Master",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array11",
+            "request": "launch",
+            "mainClass": "Array11",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoOne",
+            "request": "launch",
+            "mainClass": "DemoOne",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch StudyEnglish",
+            "request": "launch",
+            "mainClass": "StudyEnglish",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array9",
+            "request": "launch",
+            "mainClass": "Array9",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch SeasonDemo",
+            "request": "launch",
+            "mainClass": "SeasonDemo",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array10",
+            "request": "launch",
+            "mainClass": "Array10",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Hello",
+            "request": "launch",
+            "mainClass": "Hello",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array12",
+            "request": "launch",
+            "mainClass": "Array12",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Launch Season",
+            "request": "launch",
+            "mainClass": "Season",
+            "projectName": "Java_test_ed5e4f75"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
