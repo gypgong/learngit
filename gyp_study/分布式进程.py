@@ -3,7 +3,9 @@
 
 # task_master.py
 
-import random, time, queue
+import random
+import time
+import queue
 from multiprocessing.managers import BaseManager
 
 # 发送任务的队列：
@@ -12,28 +14,29 @@ task_queue = queue.Queue()
 # 接受结果的队列：
 result_queue = queue.Queue()
 
+
 def return_task_queue():
-    global task_queue
     return task_queue
-    
+
+
 def return_result_queue():
-    global result_queue
     return result_queue
 
 # 从BaseManager继承的QueueManager：
+
+
 class QueueManager(BaseManager):
     pass
 
 
-if __name__ == '__main__':
- 
 # 把两个Queue都注册到网络上，callable参数关联了Queue对象：
-    QueueManager.register('get_task_queue', callable=return_task_queue)
-    QueueManager.register('get_result_queue', callable=return_result_queue)
+QueueManager.register('get_task_queue', callable=return_task_queue)
+QueueManager.register('get_result_queue', callable=return_result_queue)
+
+if __name__ == '__main__':
 
     # 绑定端口 5000，设置验证码’abc‘:
     manager = QueueManager(address=('127.0.0.1', 5000), authkey=b'abc')
-
     # 启动Queue
     manager.start()
 
@@ -49,15 +52,14 @@ if __name__ == '__main__':
 
     # 从result队列读取结果：
     print('Try get result ...')
+    try:
+        for i in range(10):
+            r = result.get(timeout=10)
+            print('Result: %s' % r)
+            time.sleep(10)
+    except queue.Empty:
+        print('结果队列为空')
 
-    for i in range(10):
-        r = result.get(timeout=10)
-        print('Result: %s' % r)
-   
-    
     # 关闭
     manager.shutdown()
     print('manager exit')
-
-
-
